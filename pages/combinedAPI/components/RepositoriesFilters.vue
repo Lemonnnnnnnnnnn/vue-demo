@@ -1,12 +1,11 @@
 <template>
     <div>
-        Index
+        <button>search</button>
     </div>
 </template>
 
 <script setup>
-const res = await $fetch('/api/hello')
-console.log(res);
+
 </script>
 
 <style lang="scss" scoped>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        Foo4
+        <button>get order list</button>
     </div>
 </template>
 
