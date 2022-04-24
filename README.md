@@ -1,24 +1,42 @@
-# vue-demo
+# Nuxt 3 Minimal Starter
 
-## Project setup
-```
-pnpm install
-```
+Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-### Compiles and hot-reloads for development
-```
-pnpm run serve
-```
+## Setup
 
-### Compiles and minifies for production
-```
-pnpm run build
-```
+Make sure to install the dependencies:
 
-### Lints and fixes files
-```
-pnpm run lint
+```bash
+# yarn
+yarn install
+
+# npm
+npm install
+
+# pnpm
+pnpm install --shamefully-hoist
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Development Server
+
+Start the development server on http://localhost:3000
+
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
