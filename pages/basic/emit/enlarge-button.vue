@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="$emit('parentMethod')">enlarge button</button>
+        <button @click="$emit('parentMethod' , 5)">enlarge button</button>
     </div>
 </template>
 

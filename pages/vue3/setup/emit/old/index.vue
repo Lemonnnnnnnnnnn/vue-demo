@@ -1,14 +1,12 @@
 <template>
     <div>
         <div :style="{ fontSize: fontSize + 'px' }">title</div>
-        <enlarge-button @parentMethod="handleClick"></enlarge-button>
-        <propsButton :parentMethod="handleClick"></propsButton>
+        <my-button @parentMethod="handleClick"></my-button>
     </div>
 </template>
 
 <script setup lang="ts">
-import enlargeButton from './enlarge-button.vue';
-import propsButton from './props.vue';
+import myButton from './button.vue';
 
 const fontSize = ref(10)
 
