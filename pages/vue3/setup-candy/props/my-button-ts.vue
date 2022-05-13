@@ -1,13 +1,16 @@
 <template>
     <div>
-        {{ title }}
+        {{ props.title }}
     </div>
 </template>
 
 <script setup lang="ts">
-const { title } = defineProps({
-    title: String
-})
+interface IProps {
+    title: string
+}
+
+const props = defineProps<IProps>()
+
 </script>
 
 <style scoped>
