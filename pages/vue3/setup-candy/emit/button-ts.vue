@@ -1,15 +1,19 @@
 <template>
     <div>
-        <button @click="$emit('parentMethod', 5)">enlarge button ts</button>
+        <button @click="handleClick">enlarge button ts</button>
     </div>
 </template>
 
 <script setup lang="ts">
 
 
-defineEmits<{
+const emit = defineEmits<{
   (e: 'parentMethod', num: number): void,
 }>()
+
+const handleClick = () =>{
+  emit('parentMethod' , 5)
+}
 
 </script>
 

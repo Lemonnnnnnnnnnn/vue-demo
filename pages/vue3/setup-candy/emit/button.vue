@@ -1,12 +1,16 @@
 <template>
     <div>
-        <button @click="$emit('parentMethod', 5)">enlarge button</button>
+        <button @click="handleClick">enlarge button</button>
     </div>
 </template>
 
 <script setup>
 import { emitName } from './constants'
-defineEmits([emitName])
+const emit = defineEmits([emitName])
+
+const handleClick = () =>{
+  emit('parentMethod' , 5)
+}
 
 </script>
 

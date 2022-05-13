@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import myButton from './my-button.vue';
+import myButton from '../export-property./basic-use./basic-use/my-button.vue';
 const title = ref('title')
 
 </script>
